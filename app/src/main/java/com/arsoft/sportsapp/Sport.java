@@ -1,5 +1,7 @@
 package com.arsoft.sportsapp;
 
+// Model Class
+
 public class Sport {
     String sportName;
     int sportImg;

@@ -15,7 +15,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageViewCard"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:src="@drawable/volley"
@@ -26,7 +26,7 @@
 
         <TextView
             android:textColor="@color/black"
-            android:id="@+id/textView"
+            android:id="@+id/textViewCard"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -37,7 +37,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView" />
+            app:layout_constraintTop_toTopOf="@+id/imageViewCard" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
