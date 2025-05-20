@@ -1,6 +1,8 @@
 package com.arsoft.sportsapp;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,7 +17,7 @@ import java.util.List;
 
 import kotlin.jvm.internal.SpreadBuilder;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements ItemClickListener{
 
     // 1- Adapter View
     private RecyclerView recyclerView;
@@ -54,9 +56,15 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView.setAdapter(adapter);
 
+        adapter.setClickListener(this);
 
 
 
 
+    }
+
+    @Override
+    public void onCLick(View v, int position) {
+        Toast.makeText(this, "You choose: "+sportList.get(position).getSportName(), Toast.LENGTH_SHORT).show();
     }
 }
